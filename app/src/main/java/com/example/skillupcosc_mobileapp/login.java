@@ -15,27 +15,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private Button button1;
-    private Button button2;
+public class login extends AppCompatActivity {
+    private Button Button1;
+    private Button Button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        button1=(Button)findViewById(R.id.register);
-        button1.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.login);
+        Button1=(Button)findViewById(R.id.button1);
+        Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  Intent i1=new Intent(MainActivity.this,register.class);
+              //  Intent i1=new Intent(login.this,homepage.class);
               //  startActivity(i1);
             }
         });
-        button2=(Button)findViewById(R.id.login);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button2=(Button)findViewById(R.id.button2);
+        Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent i2=new Intent(MainActivity.this,login.class);
-               startActivity(i2);
+                 Intent i2=new Intent(login.this,MainActivity.class);
+                 startActivity(i2);
             }
         });
     }
