@@ -30,8 +30,8 @@ public class details extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent i1=new Intent(details.this,rolelist.class);
-                // startActivity(i1);
+                Intent i1=new Intent(details.this,rolelist.class);
+                 startActivity(i1);
             }
         });
     }

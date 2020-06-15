@@ -38,8 +38,8 @@ public class status extends AppCompatActivity {
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //   Intent i1=new Intent(status.this,homepage.class);
-                //   startActivity(i1);
+                   Intent i1=new Intent(status.this,homepage.class);
+                   startActivity(i1);
             }
         });
     }
