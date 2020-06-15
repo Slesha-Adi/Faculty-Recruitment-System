@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".login"/>
+        <activity android:name=".status"/>
+        <activity android:name=".details"/>
     </application>
 
 </manifest>

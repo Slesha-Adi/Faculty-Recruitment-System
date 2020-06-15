@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="100dp">
+
+    <EditText
+        android:id="@+id/prefsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Preference Subject"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/research_details"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:gravity="top"
+        android:hint="Enter that Subject Research Details"
+        android:inputType="text|textMultiLine"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</LinearLayout>
