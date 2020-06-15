@@ -24,6 +24,9 @@
         <activity android:name=".login" />
         <activity android:name=".status" />
         <activity android:name=".details" />
+        <activity android:name=".registration"/>
+        <activity android:name=".rolelist"/>
+        <activity android:name=".homepage"/>
     </application>
 
 </manifest>
