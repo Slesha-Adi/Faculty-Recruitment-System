@@ -14,10 +14,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class login extends AppCompatActivity {
     private Button Button1;
     private Button Button2;
+    private TextView Tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,5 +40,13 @@ public class login extends AppCompatActivity {
                  startActivity(i2);
             }
         });
+        Tv=(TextView)findViewById(R.id.textView10);
+        Tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i3=new Intent(login.this, registration.class);
+            }
+        });
+
     }
 }

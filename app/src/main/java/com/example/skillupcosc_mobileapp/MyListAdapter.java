@@ -1,10 +1,11 @@
+package com.example.skillupcosc_mobileapp;
 import android.app.Activity;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-package com.example.skillupcosc_mobileapp;
+
 import android.widget.TextView;
 
 public class MyListAdapter extends ArrayAdapter<String> {

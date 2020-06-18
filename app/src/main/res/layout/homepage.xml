@@ -4,60 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homepage">
+    tools:context="com.example.skillupcosc_mobileapp.homepage"
+    android:background="@drawable/bg4">
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="115dp"
-        android:layout_height="30dp"
-        android:fontFamily="sans-serif-black"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-medium"
         android:text="List of Roles"
-        android:textSize="18sp"
+        android:textSize="20dp"
+        android:textColor="#131111"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.356" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="199dp"
-        android:layout_height="32dp"
-        android:fontFamily="sans-serif-black"
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Status of applications "
-        android:textSize="18sp"
+        android:textSize="20dp"
+        android:textColor="#131111"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="274dp"
+        android:layout_height="43dp"
         android:text="No. of applications allowed: 3"
         android:textColor="#DC1313"
         android:textColorHighlight="#131111"
         android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintVertical_bias="0.671" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bluebuttons"
         android:text="Logout"
+        android:textColor="#ffff"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.888" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
