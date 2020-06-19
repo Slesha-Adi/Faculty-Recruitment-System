@@ -7,9 +7,10 @@
     android:orientation="vertical"
     android:background="@drawable/bg5">
 
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="802dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,7 +19,7 @@
 
             <EditText
                 android:id="@+id/firstName"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="39dp"
@@ -34,7 +35,7 @@
 
             <EditText
                 android:id="@+id/lastName"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="39dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="39dp"
@@ -51,7 +52,7 @@
 
             <EditText
                 android:id="@+id/emailID"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:ems="10"
@@ -65,8 +66,8 @@
                 app:layout_constraintVertical_bias="0.088" />
 
             <EditText
-                android:id="@+id/password"
-                android:layout_width="259dp"
+                android:id="@+id/registerpassword"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -82,7 +83,7 @@
 
             <EditText
                 android:id="@+id/phoneNumber"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -92,7 +93,7 @@
 
             <EditText
                 android:id="@+id/aadharNumber"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="040dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -107,8 +108,8 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <RadioGroup
-                android:id="@+id/radioGroup2"
-                android:layout_width="259dp"
+                android:id="@+id/radioGroup"
+                android:layout_width="270dp"
                 android:layout_height="101dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -132,11 +133,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="100dp"
                     android:layout_marginTop="-35dp"
+                    android:onClick="rbClick"
                     android:text="Male" />
 
                 <RadioButton
                     android:id="@+id/female"
                     android:layout_width="93dp"
+                    android:onClick="rbClick"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="100dp"
                     android:text="Female" />
@@ -144,6 +147,7 @@
                 <RadioButton
                     android:id="@+id/other"
                     android:layout_width="93dp"
+                    android:onClick="rbClick"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="100dp"
                     android:text="Other" />
@@ -152,7 +156,7 @@
 
             <EditText
                 android:id="@+id/qualifications"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -167,8 +171,24 @@
                 app:layout_constraintVertical_bias="0.187" />
 
             <EditText
+                android:id="@+id/dept_qualified"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="Qualified Department (ex:CSE,.) "
+                android:inputType="textLongMessage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.421"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintVertical_bias="0.187" />
+
+            <EditText
                 android:id="@+id/collegeName"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -184,7 +204,7 @@
 
             <EditText
                 android:id="@+id/cgpa"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -199,8 +219,24 @@
                 app:layout_constraintVertical_bias="0.187" />
 
             <EditText
+                android:id="@+id/college_batch"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="College Batch (ex:2001-2005)"
+                android:inputType="textLongMessage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.421"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintVertical_bias="0.187" />
+
+            <EditText
                 android:id="@+id/dob"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -215,13 +251,29 @@
                 app:layout_constraintVertical_bias="0.187" />
 
             <EditText
-                android:id="@+id/address"
-                android:layout_width="259dp"
+                android:id="@+id/current_address"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
                 android:ems="10"
-                android:hint="Address"
+                android:hint="Current Address"
+                android:inputType="textPostalAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.421"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintVertical_bias="0.187" />
+
+            <EditText
+                android:id="@+id/permanent_address"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="Permanent Address"
                 android:inputType="textPostalAddress"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -232,7 +284,7 @@
 
             <EditText
                 android:id="@+id/experience"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -248,7 +300,7 @@
 
             <EditText
                 android:id="@+id/previousOffice"
-                android:layout_width="259dp"
+                android:layout_width="272dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -265,7 +317,7 @@
 
             <EditText
                 android:id="@+id/previousPosition"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -282,7 +334,7 @@
 
             <EditText
                 android:id="@+id/achievements"
-                android:layout_width="259dp"
+                android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="29dp"
@@ -304,17 +356,21 @@
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="29dp"
                 android:text="Register" />
+
             <Button
                 android:id="@+id/buttonlogin"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
                 android:text="Login Now" />
+
             <Button
                 android:id="@+id/back"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
+                android:layout_marginBottom="29dp"
+
                 android:text="Back" />
 
 

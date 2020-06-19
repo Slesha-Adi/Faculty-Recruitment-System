@@ -23,6 +23,7 @@ package="com.example.skillupcosc_mobileapp">
     <activity android:name=".homepage"/>
 
     <activity android:name=".status" />
+    <activity android:name=".registration"/>
     <activity android:name=".details"></activity>
     <activity android:name=".login"></activity>
 
